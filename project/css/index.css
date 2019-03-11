@@ -1,0 +1,1528 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+.page {
+    height: 100%;
+}
+
+body {
+    max-width: 768px;
+}
+
+/* 公共样式 */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* 人像模型 */
+
+.human {
+    position: absolute;
+    width: 52%;
+    top: 45px;
+    left: 79px;
+    display: none;
+}
+
+/* 手指点击 */
+
+.finger {
+    position: absolute;
+    width: 14%;
+    top: 145px;
+    left: 143px;
+    animation: p2move .7s linear infinite;
+    transition: all 1s;
+    display: none;
+}
+
+@keyframes p2move {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.4);
+    }
+}
+
+/* iphoneX */
+
+@media screen and (min-height: 812px) {
+    .human {
+        position: absolute;
+        width: 52%;
+        top: 45px;
+        left: 79px;
+        height: 88%;
+    }
+    .finger {
+        top: 162px;
+    }
+}
+
+/* 点击按钮 */
+
+.btn1 {
+    position: absolute;
+    width: 39%;
+    bottom: 45px;
+    right: 15px;
+    display: none;
+}
+
+/* 第一页 */
+
+.page01 {
+    background-color: #b9a9d3;
+    background-size: 100%;
+    position: relative;
+}
+
+.p1-img1 {
+    position: absolute;
+    width: 45%;
+    z-index: 2;
+}
+
+.p1-img2 {
+    position: absolute;
+    width: 85%;
+    bottom: 0;
+    z-index: 2;
+}
+
+.p1-img3 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.p1-img4 {
+    position: absolute;
+    width: 70%;
+    top: 307px;
+    left: 30px;
+    z-index: 3;
+    display: none;
+}
+
+.p1-img5 {
+    position: absolute;
+    width: 40%;
+    top: 368px;
+    left: 147px;
+    z-index: 3;
+    display: none;
+}
+
+/* iphoneX */
+
+@media screen and (min-height: 812px) {
+    .p1-img3 {
+        height: 100%;
+    }
+    .p1-img4 {
+        position: absolute;
+        width: 70%;
+        top: 374px;
+        left: 30px;
+        z-index: 3;
+    }
+    .p1-img5 {
+        position: absolute;
+        width: 40%;
+        top: 436px;
+        left: 152px;
+        z-index: 3;
+    }
+}
+
+/* iphone5 */
+
+@media screen and (max-height: 568px) {
+    .p1-img4 {
+        position: absolute;
+        width: 70%;
+        top: 264px;
+        left: 26px;
+        z-index: 3;
+    }
+    .p1-img5 {
+        position: absolute;
+        width: 40%;
+        top: 317px;
+        left: 126px;
+        z-index: 3;
+    }
+}
+
+/* iphone 6Plus */
+
+@media screen and (min-width: 411px) {
+    .p1-img4 {
+        position: absolute;
+        width: 70%;
+        top: 339px;
+        left: 30px;
+        z-index: 3;
+    }
+    .p1-img5 {
+        position: absolute;
+        width: 40%;
+        top: 407px;
+        left: 160px;
+        z-index: 3;
+    }
+}
+
+/* 第二页 */
+
+.page02 {
+    background: url(../img/p2-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* 第三页 */
+
+.page03 {
+    background: url(../img/p3-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.p3-img1 {
+    position: absolute;
+    z-index: 3;
+    width: 94%;
+    top: 36px;
+    left: 10px;
+}
+
+.p3-img3 {
+    position: absolute;
+    z-index: 1;
+    width: 82%;
+    top: 0;
+    left: 47px;
+}
+
+.p3-img2 {
+    position: absolute;
+    z-index: 2;
+    width: 76%;
+    top: 82px;
+    right: 15px;
+    animation: p3move 1s linear;
+    transition: all 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+.p3-img5 {
+    position: absolute;
+    width: 6.5%;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.p3-img6 {
+    position: absolute;
+    width: 38%;
+    z-index: 4;
+    animation: p3move1 2.5s linear;
+    transition: all 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.p3-img7 {
+    position: absolute;
+    width: 35%;
+    bottom: 35px;
+    left: 120px;
+    z-index: 5;
+    display: none;
+}
+
+.p3-img4 {
+    position: absolute;
+    width: 27%;
+    top: 14px;
+    right: 99px;
+    z-index: 5;
+    display: none;
+}
+
+@keyframes p3move {
+    0% {
+        top: 82px;
+    }
+    50% {
+        top: 90px;
+    }
+    100% {
+        top: 97px;
+    }
+}
+
+@keyframes p3move1 {
+    0% {
+        bottom: 215px;
+        right: 0;
+    }
+    25% {
+        bottom: 170px;
+        right: 40px;
+    }
+    50% {
+        bottom: 135px;
+        right: 10px;
+    }
+    75% {
+        bottom: 100px;
+        right: 33px;
+    }
+    100% {
+        bottom: 75px;
+        right: 11px;
+    }
+}
+
+/* iphone5 */
+
+@media screen and (max-height: 568px) {
+    .p3-img1 {
+        top: 30px;
+    }
+    .p3-img4 {
+        width: 25%;
+        right: 84px;
+    }
+    .p3-img2 {
+        top: 68px;
+        right: 12px;
+        animation: p3move2 1s linear;
+        transition: all 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+    }
+    @keyframes p3move2 {
+        from {
+            top: 68px;
+        }
+        to {
+            top: 82px;
+        }
+    }
+}
+
+/* iphoneX */
+
+@media screen and (min-height: 812px) {
+    .p3-img1 {
+        height: 94%;
+    }
+    .p3-img2 {
+        height: 45%;
+        width: 80%;
+        top: 82px;
+        right: 15px;
+    }
+    .p3-img3 {
+        height: 40%;
+    }
+}
+
+/* iphone 6Plus */
+
+@media screen and (min-width: 411px) {
+    .p3-img1 {
+        left: 12px;
+    }
+    .p3-img4 {
+        top: 8px;
+        right: 112px;
+    }
+}
+
+/* 第四页 */
+
+.page04 {
+    background: url(../img/p4-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* 第五页 */
+
+.page05 {
+    background: url(../img/p3-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.p5-img1 {
+    position: absolute;
+    width: 97.2%;
+    top: 0;
+    left: 10px;
+}
+
+.p5-img2 {
+    position: absolute;
+    width: 33%;
+    bottom: 30px;
+    left: 10px;
+    z-index: 3;
+    animation: p5move 1s linear;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+}
+
+.p5-img2-1 {
+    position: absolute;
+    width: 33%;
+    bottom: 18px;
+    left: 13px;
+    animation: p5move1 1s linear;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+}
+
+.p5-img6 {
+    position: absolute;
+    z-index: 4;
+    width: 60%;
+    bottom: 200px;
+    left: 70px;
+}
+
+.p5-img4 {
+    position: absolute;
+    z-index: 4;
+    width: 38%;
+    top: 128px;
+    right: 10px;
+    animation: p5move2 2.5s linear;
+    transition: all 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.p5-img5 {
+    position: absolute;
+    width: 12%;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.p5-img7 {
+    position: absolute;
+    width: 35%;
+    bottom: 35px;
+    left: 120px;
+    z-index: 5;
+    display: none;
+}
+
+.p5-img3 {
+    position: absolute;
+    z-index: 4;
+    width: 28%;
+    bottom: 90px;
+    left: 81px;
+    display: none;
+}
+
+@keyframes p5move {
+    from {
+        bottom: 30px;
+    }
+    to {
+        bottom: 50px;
+    }
+}
+
+@keyframes p5move1 {
+    from {
+        bottom: 18px;
+    }
+    to {
+        bottom: 39px;
+    }
+}
+
+@keyframes p5move2 {
+    0% {
+        top: 0;
+        right: 0;
+    }
+    25% {
+        top: 30px;
+        right: 40px;
+    }
+    50% {
+        bottom: 60px;
+        right: 10px;
+    }
+    75% {
+        bottom: 90px;
+        right: 33px;
+    }
+    100% {
+        top: 128px;
+        right: 11px;
+    }
+}
+
+/* iphone5 */
+
+@media screen and (max-height: 568px) {
+    .p5-img1 {
+        width: 97%;
+        left: 9px;
+    }
+    .p5-img2 {
+        left: 9px;
+    }
+    .p5-img6 {
+        width: 56%;
+        bottom: 193px;
+    }
+    .p5-img3 {
+        left: 71px;
+    }
+}
+
+/* iphoneX */
+
+@media screen and (min-height: 812px) {
+    .p5-img1 {
+        height: 98.3%;
+    }
+    .p5-img2 {
+        bottom: 97px;
+        animation: p5move3 1s linear;
+        animation-fill-mode: forwards;
+        transition: all 1s;
+    }
+    .p5-img2-1 {
+        bottom: 84px;
+        left: 16px;
+        animation: p5move4 1s linear;
+        animation-fill-mode: forwards;
+        transition: all 1s;
+    }
+    .p5-img3 {
+        bottom: 160px;
+    }
+    .p5-img4 {
+        animation: p5move7 2.5s linear;
+        transition: all 2.5s;
+        animation-fill-mode: forwards;
+    }
+    .p5-img6 {
+        width: 60%;
+        left: 79px;
+        bottom: 284px;
+    }
+    @keyframes p5move3 {
+        from {
+            bottom: 97px;
+        }
+        to {
+            bottom: 120px;
+        }
+    }
+    @keyframes p5move4 {
+        from {
+            bottom: 84px;
+        }
+        to {
+            bottom: 106px;
+        }
+    }
+    @keyframes p5move7 {
+        0% {
+            top: 50px;
+            right: 0;
+        }
+        25% {
+            top: 80px;
+            right: 40px;
+        }
+        50% {
+            top: 110px;
+            right: 10px;
+        }
+        75% {
+            top: 140px;
+            right: 33px;
+        }
+        100% {
+            top: 170px;
+            right: 11px;
+        }
+    }
+}
+
+/* iphone 6Plus */
+
+@media screen and (min-width: 411px) {
+    .p5-img1 {
+        left: 11px;
+    }
+    .p5-img2 {
+        left: 11px;
+        animation: p5move5 1s linear;
+        animation-fill-mode: forwards;
+        transition: all 1s;
+    }
+    .p5-img2-1 {
+        animation: p5move6 1s linear;
+        animation-fill-mode: forwards;
+        transition: all 1s;
+    }
+    .p5-img6 {
+        width: 63%;
+        left: 66px;
+    }
+    @keyframes p5move5 {
+        from {
+            bottom: 30px;
+        }
+        to {
+            bottom: 60px;
+        }
+    }
+    @keyframes p5move6 {
+        from {
+            bottom: 18px;
+        }
+        to {
+            bottom: 49px;
+        }
+    }
+}
+
+/* 安卓机 */
+
+@media (min-height: 812px) and (min-width: 411px) {
+    .p5-img1 {
+        height: 98.3%;
+    }
+    .p5-img2 {
+        bottom: 97px;
+        animation: p5move3 1s linear;
+        animation-fill-mode: forwards;
+        transition: all 1s;
+    }
+    .p5-img2-1 {
+        bottom: 84px;
+        left: 16px;
+        animation: p5move4 1s linear;
+        animation-fill-mode: forwards;
+        transition: all 1s;
+    }
+    .p5-img3 {
+        bottom: 160px;
+        left: 89px;
+    }
+    .p5-img4 {
+        animation: p5move7 2.5s linear;
+        transition: all 2.5s;
+        animation-fill-mode: forwards;
+    }
+    .p5-img6 {
+        width: 60%;
+        left: 79px;
+        bottom: 284px;
+    }
+    @keyframes p5move3 {
+        from {
+            bottom: 97px;
+        }
+        to {
+            bottom: 120px;
+        }
+    }
+    @keyframes p5move4 {
+        from {
+            bottom: 84px;
+        }
+        to {
+            bottom: 106px;
+        }
+    }
+    @keyframes p5move7 {
+        0% {
+            top: 30px;
+            right: 0;
+        }
+        25% {
+            top: 70px;
+            right: 40px;
+        }
+        50% {
+            bottom: 100px;
+            right: 10px;
+        }
+        75% {
+            bottom: 130px;
+            right: 33px;
+        }
+        100% {
+            top: 160px;
+            right: 11px;
+        }
+    }
+}
+
+/* 第六页 */
+
+.page06 {
+    background: url(../img/p6-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* 第七页 */
+
+.page07 {
+    background: url(../img/p3-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.p7-img1 {
+    position: absolute;
+    width: 65.9%;
+    top: 0;
+    left: 75px;
+    z-index: 1;
+}
+
+.p7-img2 {
+    position: absolute;
+    width: 79%;
+    top: 0;
+    left: 11px;
+    z-index: 2;
+    animation: p7move1 1s linear;
+    transition: all 1s;
+    animation-fill-mode: forwards;
+    transform-origin: right;
+}
+
+.p7-img3 {
+    position: absolute;
+    width: 15%;
+    top: 202px;
+    right: 62px;
+    animation: p7move 1s linear;
+    transition: all 1s;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    animation-delay: .5s;
+}
+
+.p7-img4 {
+    position: absolute;
+    width: 25%;
+    top: 325px;
+    right: 30px;
+    display: none;
+}
+
+.p7-img5 {
+    position: absolute;
+    width: 44%;
+    bottom: 69px;
+    right: 32px;
+    z-index: 3;
+    animation: p7move2 2.5s linear;
+    transition: all 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.p7-img6 {
+    position: absolute;
+    width: 16%;
+    bottom: 20px;
+    right: 20px;
+    z-index: 4;
+    display: none;
+}
+
+.p7-img7 {
+    position: absolute;
+    width: 35%;
+    bottom: 35px;
+    left: 120px;
+    z-index: 5;
+    display: none;
+}
+
+@keyframes p7move {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-3deg);
+    }
+}
+
+@keyframes p7move1 {
+    from {
+        transform: rotate(0deg);
+        left: 11px;
+    }
+    to {
+        transform: rotate(2deg);
+        left: 13px;
+    }
+}
+
+@keyframes p7move2 {
+    0% {
+        bottom: 349px;
+        right: 0;
+    }
+    25% {
+        bottom: 279px;
+        right: 40px;
+    }
+    50% {
+        bottom: 209px;
+        right: 10px;
+    }
+    75% {
+        bottom: 139px;
+        right: 33px;
+    }
+    100% {
+        bottom: 69px;
+        right: 11px;
+    }
+}
+
+/* iphone5 */
+
+@media screen and (max-height: 568px) {
+    .p7-img1 {
+        width: 65.8%;
+        left: 62px;
+    }
+    .p7-img2 {
+        left: 10px;
+        animation: p7move3 1s linear;
+        transition: all 1s;
+        animation-fill-mode: forwards;
+        transform-origin: right;
+    }
+    @keyframes p7move3 {
+        from {
+            transform: rotate(0deg);
+            left: 10px;
+        }
+        to {
+            transform: rotate(2deg);
+            left: 12px;
+        }
+    }
+    .p7-img3 {
+        top: 162px;
+        right: 55px;
+    }
+    .p7-img4 {
+        top: 281px;
+    }
+}
+
+/* iphoneX */
+
+@media screen and (min-height: 812px) {
+    .p7-img1 {
+        height: 98.4%;
+    }
+    .p7-img2 {
+        height: 29%;
+        animation: p7move4 1s linear;
+        transition: all 1s;
+        animation-fill-mode: forwards;
+        transform-origin: right;
+    }
+    .p7-img3 {
+        top: 223px;
+        right: 68px;
+        height: 42%;
+    }
+    .p7-img4 {
+        top: 409px;
+        right: 34px;
+    }
+    @keyframes p7move4 {
+        from {
+            transform: rotate(0deg);
+            left: 11px;
+        }
+        to {
+            transform: rotate(2deg);
+            left: 14px;
+        }
+    }
+}
+
+/* iphone 6Plus */
+
+@media screen and (min-width: 411px) {
+    .p7-img2 {
+        width: 76%;
+        top: 0;
+        left: 12px;
+    }
+    .p7-img3 {
+        right: 77px;
+    }
+    .p7-img4 {
+        top: 360px;
+        right: 44px;
+    }
+}
+
+/* 安卓机 */
+
+@media (min-height: 812px) and (min-width: 411px) {
+    .p7-img1 {
+        left: 79px;
+    }
+    .p7-img4 {
+        top: 407px;
+        right: 40px;
+    }
+}
+
+/* 第八页 */
+
+.page08 {
+    background: url(../img/p8-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.p8-img1 {
+    position: absolute;
+    width: 46%;
+    left: 52px;
+    top: 84px;
+    z-index: 3;
+    display: none;
+}
+
+.p8-img2 {
+    position: absolute;
+    width: 50%;
+    right: 23px;
+    top: 247px;
+    z-index: 2;
+    display: none;
+}
+
+.p8-img3 {
+    position: absolute;
+    width: 48%;
+    left: 50px;
+    bottom: 105px;
+    display: none;
+}
+
+.p8-img4 {
+    position: absolute;
+    width: 31%;
+    right: 60px;
+    top: 112px;
+    display: none;
+}
+
+.p8-img5 {
+    position: absolute;
+    width: 32%;
+    bottom: 172px;
+    right: 17px;
+    display: none;
+}
+
+.p8-img6 {
+    position: absolute;
+    width: 41%;
+    bottom: 86px;
+    left: 40px;
+    display: none;
+}
+
+.p8-img7 {
+    position: absolute;
+    width: 30%;
+    bottom: 33px;
+    left: 120px;
+    display: none;
+}
+
+/* iphone5 */
+
+@media screen and (max-height: 568px) {
+    .p8-img1 {
+        width: 43%;
+    }
+    .p8-img2 {
+        width: 46%;
+        right: 24px;
+        top: 212px;
+    }
+    .p8-img3 {
+        width: 45%;
+        left: 50px;
+        bottom: 117px;
+    }
+    .p8-img5 {
+        width: 32%;
+        bottom: 158px;
+        right: 23px;
+    }
+    .p8-img6 {
+        width: 42%;
+        bottom: 93px;
+    }
+}
+
+/* iphoneX */
+
+@media screen and (min-height: 812px) {
+    .p8-img3 {
+        top: 330px;
+    }
+    .p8-img4 {
+        right: 63px;
+    }
+    .p8-img5 {
+        bottom: 315px;
+        right: 28px;
+    }
+    .p8-img6 {
+        bottom: 234px;
+    }
+    .p8-img7 {
+        bottom: 50px;
+    }
+}
+
+/* iphone 6Plus */
+
+@media screen and (min-width: 411px) {
+    .p8-img2 {
+        top: 262px;
+    }
+    .p8-img3 {
+        bottom: 142px;
+    }
+    .p8-img4 {
+        right: 75px;
+    }
+    .p8-img5 {
+        bottom: 194px;
+        right: 23px;
+    }
+    .p8-img6 {
+        bottom: 112px;
+    }
+    .p8-img7 {
+        left: 140px;
+    }
+}
+
+/* 安卓机 */
+
+@media (min-height: 812px) and (min-width: 411px) {
+    .p8-img3 {
+        top: 347px;
+    }
+    .p8-img5 {
+        bottom: 275px;
+        right: 30px;
+    }
+    .p8-img6 {
+        bottom: 200px;
+    }
+}
+
+/* 第九页 */
+
+.page09 {
+    background: url(../img/p9-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.p9-img1 {
+    position: absolute;
+    width: 77%;
+    top: 286px;
+    left: 19px;
+    animation: p9move 1s linear infinite;
+    animation-direction: alternate;
+    transition: all .5s;
+}
+
+.p9-img2 {
+    position: absolute;
+    width: 75%;
+    top: 247px;
+    right: 36px;
+    animation: p9move1 1s linear infinite;
+    animation-direction: alternate;
+    transition: all .5s;
+}
+
+.p9-img3 {
+    position: absolute;
+    width: 58%;
+    top: 93px;
+    left: 77px;
+    display: none;
+}
+
+.p9-img4 {
+    position: absolute;
+    width: 50%;
+    top: 225px;
+    left: 93px;
+    display: none;
+}
+
+.p9-img5 {
+    position: absolute;
+    width: 35%;
+    bottom: 35px;
+    left: 120px;
+    display: none;
+}
+
+@keyframes p9move {
+    from {
+        top: 286px;
+    }
+    to {
+        top: 298px;
+    }
+}
+
+@keyframes p9move1 {
+    from {
+        top: 247px
+    }
+    to {
+        top: 229px;
+    }
+}
+
+/* iphone5 */
+
+@media screen and (max-height: 568px) {
+    .p9-img1 {
+        width: 78%;
+        top: 244px;
+        left: 19px;
+        animation: p9move2 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img2 {
+        width: 79%;
+        top: 247px;
+        right: 10px;
+        animation: p9move3 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img3 {
+        width: 58%;
+        left: 70px;
+    }
+    .p9-img4 {
+        width: 50%;
+        top: 209px;
+        left: 86px;
+    }
+    .p9-img5 {
+        left: 110px;
+    }
+    @keyframes p9move2 {
+        from {
+            top: 244px;
+        }
+        to {
+            top: 256px;
+        }
+    }
+    @keyframes p9move3 {
+        from {
+            top: 247px
+        }
+        to {
+            top: 229px;
+        }
+    }
+}
+
+/* iphoneX */
+
+@media screen and (min-height: 812px) {
+    .p9-img1 {
+        width: 79%;
+        top: 368px;
+        animation: p9move4 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img2 {
+        width: 75%;
+        top: 322px;
+        animation: p9move5 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img3 {
+        width: 59%;
+        height: 57%;
+        top: 123px;
+        left: 76px;
+    }
+    .p9-img4 {
+        top: 302px;
+    }
+    @keyframes p9move4 {
+        from {
+            top: 368px;
+        }
+        to {
+            top: 358px;
+        }
+    }
+    @keyframes p9move5 {
+        from {
+            top: 322px
+        }
+        to {
+            top: 332px;
+        }
+    }
+}
+
+/* iphone 6Plus */
+
+@media screen and (min-width: 411px) {
+    .p9-img1 {
+        top: 320px;
+        left: 21px;
+        animation: p9move6 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img2 {
+        top: 274px;
+        right: 41px;
+        animation: p9move7 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img3 {
+        left: 83px;
+    }
+    .p9-img4 {
+        top: 242px;
+        left: 100px;
+    }
+    .p9-img5 {
+        left: 130px;
+    }
+    @keyframes p9move6 {
+        from {
+            top: 320px;
+        }
+        to {
+            top: 308px;
+        }
+    }
+    @keyframes p9move7 {
+        from {
+            top: 274px;
+        }
+        to {
+            top: 286px;
+        }
+    }
+}
+
+/* 安卓机 */
+
+@media (min-height: 812px) and (min-width: 411px) {
+    .p9-img1 {
+        animation: p9move4 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img2 {
+        animation: p9move5 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img2 {
+        width: 75%;
+        top: 322px;
+        animation: p9move5 1s linear infinite;
+        animation-direction: alternate;
+        transition: all .5s;
+    }
+    .p9-img3 {
+        left: 83px;
+    }
+    .p9-img4 {
+        left: 103px;
+        top: 300px;
+    }
+}
+
+/* 第十页 */
+
+.page10 {
+    background: url(../img/p10-bg.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.p10-img1 {
+    position: absolute;
+    width: 65%;
+    top: 100px;
+    left: 64px;
+    animation: p10move 4s linear infinite;
+    transition: all .5s;
+}
+
+@keyframes p10move {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.p10-img5 {
+    position: absolute;
+    width: 74%;
+    left: 49px;
+    animation: p10move1 .7s linear infinite;
+    transition: all .5s;
+    animation-direction: alternate;
+}
+
+@keyframes p10move1 {
+    from {
+        top: 143px;
+    }
+    to {
+        top: 153px
+    }
+}
+
+.p10-img3 {
+    position: absolute;
+    width: 10%;
+    bottom: 260px;
+    left: 35px;
+    z-index: 2;
+}
+
+/* 音频 */
+
+ul {
+    list-style: none;
+}
+
+.p10-audio {
+    background: url(../img/p10-img4.png);
+    background-size: 100% 100%;
+    width: 257px;
+    height: 38px;
+    top: 373px;
+    left: 81px;
+    overflow: hidden;
+    position: relative;
+}
+
+ul {
+    width: 1330px;
+    margin-top: 5px;
+    position: absolute;
+    animation: gundong 10s linear infinite;
+}
+
+ul li {
+    float: left;
+    width: 148px;
+    height: 138px;
+    transition: all 0.5s;
+}
+
+ul li img {
+    width: 150px;
+}
+
+@keyframes gundong {
+    0% {
+        left: -660px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.p10-img6 {
+    position: absolute;
+    width: 35%;
+    bottom: 50px;
+    left: 40px;
+    z-index: 2;
+}
+
+.p10-img7 {
+    position: absolute;
+    width: 35%;
+    bottom: 50px;
+    right: 40px;
+    z-index: 2;
+}
+
+.p10-img8 {
+    position: absolute;
+    z-index: 4;
+    right: 14px;
+    top: 17px;
+    width: 45%;
+    display: none;
+}
+
+.p10-bg2 {
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    top: 0;
+    display: none;
+}
+
+/* iphone5 */
+
+@media screen and (max-height: 568px) {
+    .p10-img1 {
+        left: 57px;
+    }
+    .p10-img3 {
+        width: 12%;
+        bottom: 204px;
+        left: 24px;
+    }
+    .p10-audio {
+        width: 224px;
+        height: 34px;
+        top: 333px;
+        left: 68px;
+    }
+    .p10-img5 {
+        animation: p10move2 .7s linear infinite;
+        transition: all .5s;
+        animation-direction: alternate;
+    }
+    @keyframes p10move2 {
+        from {
+            top: 133px;
+        }
+        to {
+            top: 143px
+        }
+    }
+}
+
+/* iphoneX */
+
+@media screen and (min-height: 812px) {
+    .p10-img1 {
+        top: 148px;
+    }
+    .p10-img5 {
+        width: 77%;
+        animation: p10move3 .7s linear infinite;
+        transition: all .5s;
+        animation-direction: alternate;
+    }
+    @keyframes p10move3 {
+        from {
+            top: 193px;
+        }
+        to {
+            top: 203px
+        }
+    }
+    .p10-audio {
+        top: 470px;
+    }
+    .p10-img3 {
+        bottom: 307px;
+    }
+}
+
+/* iphone 6Plus */
+
+@media screen and (min-width: 411px) {
+    .p10-audio {
+        width: 290px;
+        top: 437px;
+        left: 86px;
+    }
+    .p10-img3 {
+        bottom: 262px;
+        left: 38px;
+    }
+}
+/* 安卓机 */
+@media (min-height: 812px) and (min-width: 411px){
+    .p10-img1{
+        top: 135px;
+    }
+    .p10-audio{
+        top: 480px;
+    }
+    .p10-img3{
+        bottom: 307px;
+    }
+}
+@media (max-height: 640px) and (max-width: 360px){
+    .p10-img3{
+        bottom: 234px;
+        left: 30px;
+    }
+    .p10-audio{
+        left: 72px;
+    }
+}
